@@ -43,10 +43,10 @@ export default function BoredApp() {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen w-screen bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-600 p-6">
-      <div className="flex flex-col items-center justify-center w-full max-w-lg p-8 shadow-2xl rounded-3xl bg-white text-center border-4 border-yellow-500">
+    <div className="flex items-center justify-center h-screen w-screen bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 p-6">
+      <div className="flex flex-col items-center justify-center w-full max-w-lg p-8 shadow-2xl rounded-3xl bg-white text-center border-4 border-blue-500">
         <motion.h1 
-          className="text-6xl font-extrabold text-purple-700 mb-6 drop-shadow-2xl" 
+          className="text-6xl font-extrabold text-blue-700 mb-6 drop-shadow-2xl" 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
@@ -54,7 +54,7 @@ export default function BoredApp() {
           I'm Bored!
         </motion.h1>
         <motion.p 
-          className="text-xl font-semibold mb-6 text-blue-700"
+          className="text-xl font-semibold mb-6 text-blue-800"
           key={activity} 
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ export default function BoredApp() {
         </motion.p>
         <motion.button 
           onClick={getNewActivity} 
-          className="bg-green-500 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-full text-xl shadow-xl transform hover:scale-110 transition"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-xl shadow-xl transform hover:scale-110 transition"
           whileHover={{ scale: 1.1 }}
         >
           Give me an idea!
@@ -73,6 +73,3 @@ export default function BoredApp() {
     </div>
   );
 }
-
-
-
