@@ -64,7 +64,7 @@ export default function BoredApp() {
         </motion.p>
         <motion.button 
           onClick={getNewActivity} 
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-xl shadow-xl transform hover:scale-110 transition"
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full text-xl shadow-xl transform hover:scale-110 transition mt-6 flex items-center justify-center"
           whileHover={{ scale: 1.1 }}
         >
           Give me an idea!
